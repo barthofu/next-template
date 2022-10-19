@@ -6,12 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "plop": "plop --plopfile ./cli/plopfile.js"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.3.6",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@fontsource/open-sans": "^4.5.13",
+    "@fontsource/raleway": "^4.5.11",
+    "framer-motion": "^7.6.1",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "@types/node": "18.11.2",
@@ -19,6 +27,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
+    "plop": "^2.3.0",
     "typescript": "4.8.4"
   }
 }
