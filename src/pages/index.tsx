@@ -1,9 +1,12 @@
+import { trpc } from '@lib/trpc'
 import type { NextPage } from 'next'
 
 import { Box } from '@chakra-ui/react'
 import { DefaultLayout } from '@components/layouts'
 
 const HomePage: NextPage = () => {
+
+	const { data } = trpc.helloWorld.helloWorldWithParams.useQuery({ name: 'everyone' })
 
 	return (<>
 
@@ -12,7 +15,7 @@ const HomePage: NextPage = () => {
 		>
 
 			<Box>
-				Hello world from index
+				{data?.message}
 			</Box>
 
 		</DefaultLayout>		
