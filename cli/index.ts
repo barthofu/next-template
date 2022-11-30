@@ -4,7 +4,7 @@ import chalk from "chalk"
 import { program } from "commander"
 import { mkdir } from "fs/promises"
 import inquirer from "inquirer"
-import { resolve } from "path"
+import path from "path"
 import simpleGit from "simple-git"
 import { spawn } from "spawnise"
 
@@ -35,7 +35,7 @@ program
         const name = isCurrentDir ? '.' : options.name || template
 
         // guards
-        if (existsSync(resolve(name))) return logger.failure('A folder with this name already exists')
+        if (name && existsSync(path.resolve(name))) return logger.failure('A folder with this name already exists')
 
         // 1. Define the template to generate along with its variant 
 
@@ -93,7 +93,7 @@ program
 
             await spawn('npm', ['install'], {
                 env: process.env,
-                cwd: resolve(name),
+                cwd: path.resolve(name),
                 stdio: 'ignore'
             })
         }
@@ -103,7 +103,7 @@ program
 
             logger.spinner.text = 'Initializing git repository...'
 
-            await git.cwd(resolve(name))
+            await git.cwd(path.resolve(name))
             await git.init()
             await git.add('.')
             await git.commit('init project from barthofu/tscord')
