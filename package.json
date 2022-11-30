@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Here are my personal starters/templates for different stacks.",
   "main": "lib/index.js",
-  "bin": {
-    "bartho-starters": "./lib/index.js"
-  },
+  "bin": "./lib/index.js",
   "files": [
     "lib"
   ],
