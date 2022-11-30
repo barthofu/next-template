@@ -1,6 +1,6 @@
 {
   "name": "@barthofu/starters",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Here are my personal starters/templates for different stacks.",
   "main": "lib/index.js",
   "bin": {
