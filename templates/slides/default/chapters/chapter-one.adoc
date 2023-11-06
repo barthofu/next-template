@@ -1,0 +1,26 @@
+[.stretch]
+[.columns]
+== 1. Introduction
+
+[.column]
+--
+Pros
+
+- foo
+- bar
+
+--
+
+[.column]
+--
+Cons
+
+- baz
+
+--
+
+=== Sous-chapitre
+
+This is a subchapter
+
+What a bold statement! footnote:disclaimer[Opinions are my own.]

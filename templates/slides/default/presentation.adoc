@@ -1,0 +1,25 @@
+= My super presentation
+:revealjs_theme: night
+:source-highlighter: highlightjs
+:highlightjs-theme: utils/css/atom-one-dark.css
+:customcss: utils/css/custom.css
+:revealjs_progress: false
+:revealjs_slideNumber: true
+:revealjs_history: true
+:revealjs_fragmentInURL: true
+:revealjs_controls: true
+:revealjs_controlsLayout: bottom-right
+:revealjs_controlsTutorial: true
+:revealjs_slideNumber: c/t
+:revealjs_autoPlayMedia: true
+    
+// local variables
+:chapters: ./chapters
+
+By Bartholomé GILI
+
+<<<<
+include::{chapters}/chapter-one.adoc[]
+
+<<<<
+include::{chapters}/chapter-two.adoc[]

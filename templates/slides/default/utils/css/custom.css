@@ -1,0 +1,8 @@
+.title h1 {
+    font-size: var(--r-heading2-size);
+}
+
+code {
+    padding: 1em !important;
+    border-radius: 10px;
+}
