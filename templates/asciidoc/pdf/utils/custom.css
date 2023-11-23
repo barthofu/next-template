@@ -1,0 +1,9 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins';
+
+* {
+  font-family: 'Poppins', serif !important;
+}
+
+.chapter {
+  page-break-before: always;
+}
